@@ -45,6 +45,7 @@ background: radial-gradient(circle, rgb(209, 252, 153), white);
   border: 2px solid gray;
   height: 40px;
 
+
 }
 
 .login_button2:hover{
@@ -77,7 +78,7 @@ h1 {
 
 /*Sign Up */
 #signupBody {
-  background: radial-gradient(circle, rgb(205, 164, 242),  rgb(193, 194, 195));
+  background: radial-gradient(circle, rgb(205, 164, 242),  white);
 
 }
 #h1_h4 {
@@ -145,6 +146,11 @@ border-color: 2px solid white;
   font-family:'Roboto', sans-serif;
   margin: 0;
 }
+#eventviewbody {
+  background: radial-gradient(circle ,rgb(140, 183, 255),  white);
+
+
+}
 .navigation{
   background-color: rgb(211, 211, 211);
   font-size: 14pt;
@@ -153,13 +159,30 @@ border-color: 2px solid white;
   justify-content: space-between;
   height: 30px;
 }
-.navigation a {
-  text-decoration: none;
+.button:hover {
+background-color:  rgb(140, 183, 255);
+color: white;
+
+}
+
+
+.button {
+  border: 2px solid gray;
   background-color: white;
-  color: rgb(42, 42, 42);
-  padding: 10px;
-  border-radius: 2px;
-  margin-left: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+height: 35px;
+text-decoration: none;
+font-family: sans-serif;
+font-size: 20px;
+color: gray;;
+padding: 5px;
+margin-left: 15px;
+}
+.company p {
+  font-size:30px;
+  font-family: sans-serif;
+  color: gray;
 }
 div .company {
   float: left;
@@ -205,8 +228,12 @@ span {
   box-shadow: 10px 10px 5px #888888;
   padding: 5px;
 }
+head {
+  border-color: 3px solid gray;;
+
+}
 /* Event List CSS */
-nav {
+#navvy {
   background-color: rgb(204, 159, 236);
   border: 2px solid gray;
   width: 100%;
@@ -215,7 +242,7 @@ nav {
   margin: 0%;
 }
 #navText {
-  font-size:25px;
+  font-size:50px;
   font-family: sans-serif;
   color: gray;
   font-style: normal;
@@ -234,7 +261,8 @@ margin-bottom: 30px;
 margin-left:18%;
 border-radius: 5px;
 float: left;
-box-shadow: 5px 5px 5px #888888
+box-shadow: 5px 5px 5px #888888;
+border-radius: 5px;
 }
 #container5, #container6, #container7, #container8 {
   display: block;
@@ -246,7 +274,8 @@ box-shadow: 5px 5px 5px #888888
   margin-left:18%;
   border-radius: 5px;
   float: right;
-box-shadow: 5px 5px 5px #888888
+box-shadow: 5px 5px 5px #888888;
+border-radius: 5px;
 }
 #container7,  #container6 {
   float: left;
@@ -254,17 +283,31 @@ box-shadow: 5px 5px 5px #888888
 #container5, #container8 {
   float: left;
 }
+#rsvp1:hover, #rsvp2:hover , #rsvp3:hover, #rsvp4:hover, #rsvp5:hover, #rsvp6:hover, #rsvp7:hover, #rsvp8:hover{
+  background-color: rgb(181, 233, 166);
+}
+#info1:hover, #info2:hover, #info3:hover, #info4:hover, #info5:hover ,  #info7:hover, #info8:hover, #info6:hover {
+background-color: rgb(233, 232, 103);
+color: white;
+}
+
+
 #rsvp1, #rsvp2 , #rsvp3, #rsvp4, #rsvp5, #rsvp6, #rsvp7, #rsvp8{
   border: 1px solid black;
   height: 50px;
 background-color: rgb(203, 124, 227);
 font-family: sans-serif;
+font-size: 12px;
+color: white;
+border-radius: 4px;
 }
 #info1, #info2, #info3, #info4, #info5 ,  #info7, #info8, #info6{
   border: 1px solid black;
   height: 50px;
 background-color: rgb(113, 195, 226);
+border-radius: 4px;
 color: white;
+font-size: 12px;
 font-family: sans-serif;
 }
 #containers {
@@ -297,21 +340,21 @@ margin: 0%;
   text-decoration: none;
   float: left;
 }
+#meetups h2 {
+  padding-left: 10px;
+}
 #navButton {
   /*border: 5px solid gray;*/
   padding:  10px;
   margin: 10px;
   width: 20%;
-  /*border-radius: 5px;*/
   display: inline;
 
 }
 #navButt {
-  /*border: 5px solid gray;*/
 padding:  2px;
   margin:10px;
   width: 15%;
-  /*border-radius: 5px;*/
   display: inline;
 }
 #bothButtons {
@@ -334,6 +377,7 @@ height: 20px;
   font-size: 15px;
   color: gray;
 
+
 }
 #bothButtons button:hover {
   background-color:  gray;
@@ -341,4 +385,80 @@ height: 20px;
 }
 #tori  {
   background-color: rgb(200, 195, 199);
+}
+/*SNOW*/
+.snow-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  top: 0;
+  overflow: hidden;
+  z-index: 2;
+  pointer-events: none;
+
+}
+
+.snow {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+  -webkit-animation: snow linear infinite;
+          animation: snow linear infinite;
+}
+.snow.foreground {
+  background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+}
+.snow.foreground.layered {
+  -webkit-animation-delay: 7.5s;
+          animation-delay: 7.5s;
+}
+.snow.middleground {
+  background-image: url(https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png);
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+.snow.middleground.layered {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+.snow.background {
+  background-image: url(https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png);
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+}
+.snow.background.layered {
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+@-webkit-keyframes snow {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(15%, 100%, 0);
+            transform: translate3d(15%, 100%, 0);
+  }
+}
+
+@keyframes snow {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(15%, 100%, 0);
+            transform: translate3d(15%, 100%, 0);
+  }
 }
